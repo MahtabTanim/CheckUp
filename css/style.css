@@ -1,0 +1,134 @@
+:root {
+  --bg: rgba(0, 0, 0, 0.767);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code";
+}
+
+.container {
+  margin: 0;
+}
+
+body {
+  background-color: aliceblue;
+
+}
+
+header {
+  background-color: var(--bg);
+}
+
+#website-header {
+  display: flex;
+
+  flex-flow: row wrap;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.items {
+  padding: 0px 10px;
+
+}
+
+#logo {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  align-self: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+#name {
+  flex: 1 1 300px;
+  align-self: center;
+  text-align: center;
+}
+
+.social-icons {
+  flex: 1 1 100px;
+  align-self: center;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.social-icons>i {
+  margin: 0 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.social-icons>i:hover {
+  
+  border: 1px solid #fff ; 
+  border-radius: 50%;
+  transition:1s;
+}
+
+.social-icons>i:nth-last-child(1) {
+  margin: 0px;
+}
+
+nav {
+  background-color: green;
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  flex-flow: row nowrap;
+  justify-content:center;
+  align-items: center;
+}
+nav > ul > li:nth-last-child(1){
+  justify-self: flex-end;
+}
+nav > ul > li{
+   flex: 1 1 15%; 
+   padding: 10px 10px;
+}
+nav > ul > li > a{
+  text-align: center;
+  color: #fff;
+  
+  font-size: 1.2em;
+  font-family: "Fira Code";
+  text-decoration: none;
+}
+nav > ul > li > a:hover{
+  border: 1px solid #fff ; 
+  border-radius: 8px;
+  padding: 7px;
+  color: azure;
+}
+.breaking-news-section{
+  display: flex;
+  padding: 20px;
+  flex-flow: row wrap;
+  gap: 2em;
+}
+.breaking_header{
+  flex: 0 0 200px;
+  font-family: "Fira Code";
+  color: #fff;
+}
+marquee{
+  flex: 1 1 400px;
+}
+ marquee > a{
+  display: inline;
+  padding:0px  100px;
+  text-decoration: none;
+  color: cadetblue;
+}
